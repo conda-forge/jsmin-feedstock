@@ -27,6 +27,7 @@ test:
 about:
     home: https://github.com/tikitu/jsmin
     license: MIT
+    license_file: LICENSE.txt
     summary: 'JavaScript minifier'
 
 extra:
