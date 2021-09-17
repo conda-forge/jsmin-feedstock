@@ -1,35 +1,35 @@
-{% set version = "2.2.2" %}
+{% set version = "3.0.0" %}
 
 package:
-    name: jsmin
-    version: {{ version }}
+  name: jsmin
+  version: {{ version }}
 
 source:
-    fn: jsmin-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/j/jsmin/jsmin-{{ version }}.tar.gz
-    sha256: b6df99b2cd1c75d9d342e4335b535789b8da9107ec748212706ef7bbe5c2553b
+  fn: jsmin-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/j/jsmin/jsmin-{{ version }}.tar.gz
+  sha256: 88fc1bd6033a47c5911dbcada7d279c7a8b7ad0841909590f6a742c20c4d2e08
 
 build:
-    number: 1002
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
+  host:
+    - python
+    - setuptools
+  run:
+    - python
 
 test:
-    imports:
-        - jsmin
+  imports:
+    - jsmin
 
 about:
-    home: https://github.com/tikitu/jsmin
-    license: MIT
-    license_file: LICENSE.txt
-    summary: 'JavaScript minifier'
+  home: https://github.com/tikitu/jsmin
+  license: MIT
+  license_file: LICENSE.txt
+  summary: JavaScript minifier
 
 extra:
-    recipe-maintainers:
-        - daf
+  recipe-maintainers:
+    - daf
