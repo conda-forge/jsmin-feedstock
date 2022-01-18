@@ -1,5 +1,5 @@
 {% set name = "jsmin" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jsmin-{{ version }}.tar.gz
-  sha256: 88fc1bd6033a47c5911dbcada7d279c7a8b7ad0841909590f6a742c20c4d2e08
+  sha256: c0959a121ef94542e807a674142606f7e90214a2b3d1eb17300244bbb5cc2bfc
 
 build:
   number: 0
